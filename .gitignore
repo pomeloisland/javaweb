@@ -1,0 +1,8 @@
+# 项目排除路径
+/javaweb-01/target/
+/javaweb-02/target/
+/javaweb-03/target/
+/javaweb-04/target/
+/javaweb-05/target/
+/javaweb-06/target/
+/javaweb-07/target/
