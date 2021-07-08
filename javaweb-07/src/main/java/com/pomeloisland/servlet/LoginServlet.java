@@ -1,5 +1,7 @@
 package com.pomeloisland.servlet;
 
+import com.pomeloisland.utils.Constant;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,7 +14,7 @@ public class LoginServlet extends HttpServlet {
         //获取前端请求的参数
         String username = req.getParameter("username");
         if (username.equals("admin")){//登陆成功
-            req.getSession().setAttribute("USER_SESSION",req.getSession().getId());
+            req.getSession().setAttribute(Constant.USER_SESSION,req.getSession().getId());
             resp.sendRedirect("/sys/success.jsp");
         }else { //登陆失败
             resp.sendRedirect("/error.jsp");
